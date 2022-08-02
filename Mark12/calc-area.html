@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Area</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>fun with triangles</h1>
+      <nav>
+        <a href="./angle-triangle.html">Is Triangle?</a>
+        <a href="/">Quiz</a>
+        <a href="./calc-hypo.html">Hypotenuse</a>
+        <a href="./calc-area.html">Area of Triangle</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Calculate Area of a triangle</h1>
+      <label>
+        <p>Enter first side of a triangle</p>
+        <input
+          placeholder="Enter side"
+          required
+          type="number"
+          id="first-side"
+        />
+      </label>
+      <label>
+        <p>Enter second side of a triangle</p>
+        <input
+          placeholder="Enter side"
+          required
+          type="number"
+          id="second-side"
+        />
+      </label>
+      <label>
+        <p>Enter third side of a triangle</p>
+        <input
+          placeholder="Enter side"
+          required
+          type="number"
+          id="third-side"
+        />
+      </label>
+      <button class="btn-check" type="submit">Calculate</button>
+      <p id="output"></p>
+    </main>
+
+    <script src="./src/calc-area.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #201a18;
+  --text: #ede0dc;
+  --primary: #ffb59c;
+  --button-text: #5c1900;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: large;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  padding: 1rem;
+  background-color: var(--primary);
+  color: var(--button-text);
+}
+
+header h1 {
+  font-family: "Megrim", cursive;
+  text-align: initial;
+}
+
+nav {
+  text-align: right;
+}
+
+nav > a {
+  padding: 0 0.5rem;
+  color: var(--button-text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input,
+label > p {
+  margin: 1rem 0rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: var(--primary);
+  color: var(--button-text);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+input {
+  color: var(--text);
+  background-color: var(--background);
+  border: none;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 1rem 2rem;
+  border: var(--primary) solid 1px;
+  border-radius: 0.5rem;
+}
+
+.output {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+h1 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

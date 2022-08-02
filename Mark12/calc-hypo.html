@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Hypotenuse</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>fun with triangles</h1>
+      <nav>
+        <a href="./angle-triangle.html">Is Triangle?</a>
+        <a href="/">Quiz</a>
+        <a href="./calc-hypo.html">Hypotenuse</a>
+        <a href="./calc-area.html">Area of Triangle</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Calculate Hypotenuse of a triangle</h1>
+      <label class="input-label"
+        ><p>Enter base value (a) =</p>
+        <input
+          placeholder="Enter Side"
+          type="number"
+          class="input-text side-input"
+        />
+      </label>
+      <label class="input-label">
+        <p>Enter height value (b) =</p>
+        <input
+          placeholder="Enter Side"
+          type="number"
+          class="input-text side-input"
+        />
+      </label>
+      <button class="btn-check" id="calculate-hypotenuse-btn">
+        Calculate hypotenuse
+      </button>
+
+      <h2 class="output"></h2>
+    </main>
+
+    <script src="./src/calc-hypo.js"></script>
+  </body>
+</html>
