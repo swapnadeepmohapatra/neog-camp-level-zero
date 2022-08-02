@@ -1,0 +1,16 @@
+body {
+  background-color: #e5e5e5;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+}
+
+h1 {
+  color: #232f34;
+}
