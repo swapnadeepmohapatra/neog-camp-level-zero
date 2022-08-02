@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #356859;
+  --secondary: #e30425;
+  --black: #333333;
+  --text: #ffffff;
+  --background: #fffbe6;
+}
+
+body {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  font-family: "Raleway", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  font-family: "Amatic SC", cursive;
+  background-color: var(--primary);
+  text-align: center;
+  height: 9vh;
+  width: 100vw;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100vw;
+}
+
+main section {
+  flex: 1;
+  height: 100%;
+}
+
+textarea {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 2rem;
+  font-size: large;
+  font-family: inherit;
+  background-color: var(--background);
+  height: calc(100% - 2rem);
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  margin: auto;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: var(--text);
+  font-family: "Raleway", sans-serif;
+}
+
+#helper-text {
+  color: var(--black);
+  text-align: center;
+  height: 2rem;
+}
+
+#translate-output {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100% - 2rem);
+  overflow: scroll;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary);
+  text-align: center;
+  height: 12vh;
+}
+
+footer p {
+  margin: auto;
+}
