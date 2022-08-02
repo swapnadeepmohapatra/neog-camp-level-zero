@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #5d1049;
+  --secondary: #e30425;
+  --black: #333333;
+  --width-break: 600px;
+  --text: #ffffff;
+  --background: #fffbe6;
+}
+
+body {
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  font-family: "Raleway", sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+}
+
+nav {
+  font-family: "Amatic SC", cursive;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  padding: 1rem;
+  max-width: var(--width-break);
+}
+
+textarea {
+  font-family: "Raleway", sans-serif;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  min-height: 20vh;
+  margin-top: 2rem;
+  font-size: large;
+  font-family: inherit;
+  background-color: var(--background);
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+  font-size: large;
+  color: var(--text);
+  font-family: "Raleway", sans-serif;
+}
+
+#helper-text {
+  color: var(--black);
+  text-align: center;
+}
+
+#translate-output {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 10vh;
+  max-height: 20vh;
+  overflow: scroll;
+  border: 1px solid var(--black);
+  color: var(--black);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+footer p {
+  max-width: var(--width-break);
+  margin: auto;
+}
