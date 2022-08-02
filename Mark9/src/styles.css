@@ -1,0 +1,46 @@
+:root {
+  --background: #373740;
+  --text: #ffffff;
+  --primary: #72deff;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+input {
+  background-color: white;
+}
+
+h1 {
+  color: var(--primary);
+}
+
+button {
+  background: #ffcf44;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.active {
+  background-color: #febc07;
+  color: var(--text);
+}
