@@ -1,0 +1,84 @@
+:root {
+  --background: #201a18;
+  --text: #ede0dc;
+  --primary: #ffb59c;
+  --button-text: #5c1900;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input,
+label {
+  margin: 1rem 0rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: var(--primary);
+  color: var(--button-text);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+input {
+  color: var(--text);
+  background-color: var(--background);
+  border: none;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 1rem 2rem;
+  border: var(--primary) solid 1px;
+  border-radius: 0.5rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+footer p {
+  font-size: large;
+  text-align: center;
+}
+
+.footer-list {
+  margin: 1rem;
+  padding: 0;
+}
+
+a,
+img,
+li {
+  display: inline;
+}
+
+img {
+  width: 40px;
+  padding: 0.2rem;
+}
