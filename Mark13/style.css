@@ -1,0 +1,50 @@
+:root {
+  --background: #201a18;
+  --text: #ede0dc;
+  --primary: #ffb59c;
+  --button-text: #5c1900;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary);
+}
+
+input,
+label {
+  margin: 1rem 0rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: var(--primary);
+  color: var(--button-text);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-size: large;
+  cursor: pointer;
+}
+
+input {
+  color: var(--text);
+  background-color: var(--background);
+  border: none;
+  margin: 0rem 0rem 1.5rem 0rem;
+  padding: 1rem 2rem;
+  border: var(--primary) solid 1px;
+  border-radius: 0.5rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rem;
+}
