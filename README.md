@@ -6,7 +6,7 @@
 
 ### Mark 1
 
-**Do you know me? CLI Quiz App**
+[**Do you know me? CLI Quiz App**](https://replit.com/@swapnadeep/HowWellDoYouKnowMe?embed=true)
 
 - [x] The quiz can be "Do you know me" or a similar CLI QUIZ on any other topic too. Take Username as input.
 - [x] Have at least 5 questions.
@@ -14,7 +14,7 @@
 
 ### Mark 2
 
-**Fandom quiz. CLI Fandom Quiz App**
+[**Fandom quiz. CLI Fandom Quiz App**](https://replit.com/@swapnadeep/JavaScriptQuiz?embed=true)
 
 - [x] Make a quiz on anything you're passionate about, similar to markOne
 - [x] Take Username as input.
@@ -23,7 +23,7 @@
 
 ### Mark 3
 
-**Hosting your website with Github + Netlify Integration**
+[**Hosting your website with Github + Netlify Integration**](https://github.com/swapnadeepmohapatra/neog-camp-level-zero)
 
 - [x] Create a different repository for every different project and push the changes.
 - [x] Push source code of your apps on Github with good commit messages.
@@ -32,7 +32,7 @@
 
 ### Mark 4
 
-**Portfolio Website**
+[**Portfolio Website**](https://portfolio-v1.neog.swapnadeep.com/)
 
 - [x] Have a home page with your Introduction, Projects, and Blogs section with call to action buttons for those pages.
 - [x] It is mandatory to put all your projects, blogs and social media handles majorly Twitter, LinkedIn in your portfolio.
@@ -41,7 +41,7 @@
 
 ### Mark 5
 
-**Portfolio Website with Blogs**
+[**Portfolio Website with Blogs**](https://portfolio.neog.swapnadeep.com/)
 
 - [x] Have a home page with your Introduction, Projects, and Blogs section with call to action buttons for those pages.
 - [x] It is mandatory to put all your projects, blogs and social media handles majorly Twitter, LinkedIn in your portfolio.
@@ -52,7 +52,7 @@
 
 ### Mark 6
 
-**Minion Speak: translator app**
+[**Minion Speak: translator app**](https://mark6.neog.swapnadeep.com/)
 
 - [x] Make the same app as made by Tanay in live video in VanillaJS. Use Minion Fun translation API for the web app.
 - [x] The app should take in input and translate the input into Minion's language.
@@ -60,7 +60,7 @@
 
 ### Mark 7
 
-**Fun Translation App**
+[**Fun Translation App**](https://mark.7.neog.swapnadeep.com/)
 
 - [x] Use Fun translation API and create another fun translation app in VanillaJS.
 - [x] All the features implemented in markSix should also be present in this app.
@@ -69,7 +69,7 @@
 
 ### Mark 8
 
-**Emoticon Interpreter**
+[**Emoticon Interpreter**](https://mark8.neog.swapnadeep.com/)
 
 - [x] Make emoji interpreter using React as we made in the live Youtube session.
 - [x] Change & customize it by yourself
@@ -80,7 +80,7 @@
 
 ### Mark 9
 
-**Books Recommendations App**
+[**Books Recommendations App**](https://mark9.neog.swapnadeep.com/)
 
 - [x] This app should be similar to Goodbooks recommendation using React showed by Tanay in a Youtube video.
 - [x] You can choose to have different genres of something you're interested in: Music, Food, Travel, etc.
@@ -92,7 +92,7 @@
 
 ### Mark 10
 
-**Cash Register Manager App**
+[**Cash Register Manager App**](https://mark10.neog.swapnadeep.com/)
 
 - [x] You should build a cash register manager in VanillaJS or React.
 - [x] Your app should have currencies of Rs. 1, 5, 10, 20, 100, 500, 2000.
@@ -102,7 +102,7 @@
 
 ### Mark 11
 
-**Is your birthday lucky app**
+[**Is your birthday lucky app**](https://mark11.neog.swapnadeep.com/)
 
 - [x] Take user's complete birthday
 - [x] Take his/her lucky number.
@@ -112,7 +112,7 @@
 
 ### Mark 12
 
-**Do you know your triangles?**
+[**Do you know your triangles?**](https://mark12.neog.swapnadeep.com/)
 
 - [x] Ask user to input three angles and you say whether user has entered angles which could make a triangle. Hint: sum of angles in triangle is 180.
 - [x] Show three angles to the user and ask if this triangle is an obtuse triangle, right triangle or acute triangle.
@@ -123,7 +123,7 @@
 
 ### Mark 13
 
-**Palindrome Birthday App**
+[**Palindrome Birthday App**](https://mark13.neog.swapnadeep.com/)
 
 - [x] Take your user's birthday
 - [x] Tell whether user was born on a palindrome day or not.
@@ -132,16 +132,19 @@
 
 ### Mark 14
 
-**Profit and loss calculator**
+[**Profit and loss calculator**](https://mark14.neog.swapnadeep.com/)
 
 - [x] Take user's stock price for one stock when he bought it.
 - [x] Take the quantity of stocks.
 - [x] Take today's stock price for that stock.
 - [x] Tell the user how much profit or loss he/she is making.
 - [x] Tell them the percentage and absolute value of profit or loss.
-- [x] Show the profit or loss in colored fonts.
+- [x] Show the profit or loss in colored fonts. (Bonus) (Optional)
 
 ### Mark 15
+
+[Blogs](https://dev.to/swapnadeepmohapatra/)
+[LinkedIn](https://www.linkedin.com/in/swapnadeep-mohapatra/)
 
 - [x] Write 2 blogs, on your own, of 200 words minimum and host it on your portfolio's blog page section. The blogs should not be copied or plagiarised. The blog could be technical or non-technical in nature.
 - [x] You should have LinkedIn Profile which is mandatory.
