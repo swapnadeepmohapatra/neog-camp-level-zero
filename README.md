@@ -8,7 +8,7 @@
 
 [**Do you know me? CLI Quiz App**](https://replit.com/@swapnadeep/HowWellDoYouKnowMe?embed=true)
 
-[Source Code]("./Mark1")
+[Source Code](Mark1)
 
 - [x] The quiz can be "Do you know me" or a similar CLI QUIZ on any other topic too. Take Username as input.
 - [x] Have at least 5 questions.
@@ -17,6 +17,8 @@
 ### Mark 2
 
 [**Fandom quiz. CLI Fandom Quiz App**](https://replit.com/@swapnadeep/JavaScriptQuiz?embed=true)
+
+[Source Code](Mark2)
 
 - [x] Make a quiz on anything you're passionate about, similar to markOne
 - [x] Take Username as input.
@@ -27,6 +29,8 @@
 
 [**Hosting your website with Github + Netlify Integration**](https://github.com/swapnadeepmohapatra/neog-camp-level-zero)
 
+[Source Code](Mark3)
+
 - [x] Create a different repository for every different project and push the changes.
 - [x] Push source code of your apps on Github with good commit messages.
 - [x] Have a README file and include details of project.
@@ -36,6 +40,8 @@
 
 [**Portfolio Website**](https://portfolio-v1.neog.swapnadeep.com/)
 
+[Source Code](Mark4)
+
 - [x] Have a home page with your Introduction, Projects, and Blogs section with call to action buttons for those pages.
 - [x] It is mandatory to put all your projects, blogs and social media handles majorly Twitter, LinkedIn in your portfolio.
 - [x] Have a Projects page with all your apps listed in it with the call to action buttons for live links and source code.
@@ -44,6 +50,8 @@
 ### Mark 5
 
 [**Portfolio Website with Blogs**](https://portfolio.neog.swapnadeep.com/)
+
+[Source Code](Mark5)
 
 - [x] Have a home page with your Introduction, Projects, and Blogs section with call to action buttons for those pages.
 - [x] It is mandatory to put all your projects, blogs and social media handles majorly Twitter, LinkedIn in your portfolio.
@@ -56,6 +64,8 @@
 
 [**Minion Speak: translator app**](https://mark6.neog.swapnadeep.com/)
 
+[Source Code](Mark6)
+
 - [x] Make the same app as made by Tanay in live video in VanillaJS. Use Minion Fun translation API for the web app.
 - [x] The app should take in input and translate the input into Minion's language.
 - [x] Create the app with your own design.
@@ -63,6 +73,8 @@
 ### Mark 7
 
 [**Fun Translation App**](https://mark.7.neog.swapnadeep.com/)
+
+[Source Code](Mark7)
 
 - [x] Use Fun translation API and create another fun translation app in VanillaJS.
 - [x] All the features implemented in markSix should also be present in this app.
@@ -72,6 +84,8 @@
 ### Mark 8
 
 [**Emoticon Interpreter**](https://mark8.neog.swapnadeep.com/)
+
+[Source Code](Mark8)
 
 - [x] Make emoji interpreter using React as we made in the live Youtube session.
 - [x] Change & customize it by yourself
@@ -83,6 +97,8 @@
 ### Mark 9
 
 [**Books Recommendations App**](https://mark9.neog.swapnadeep.com/)
+
+[Source Code](Mark9)
 
 - [x] This app should be similar to Goodbooks recommendation using React showed by Tanay in a Youtube video.
 - [x] You can choose to have different genres of something you're interested in: Music, Food, Travel, etc.
@@ -96,6 +112,8 @@
 
 [**Cash Register Manager App**](https://mark10.neog.swapnadeep.com/)
 
+[Source Code](Mark10)
+
 - [x] You should build a cash register manager in VanillaJS or React.
 - [x] Your app should have currencies of Rs. 1, 5, 10, 20, 100, 500, 2000.
 - [x] Have an input field for the user aka cashier to enter a bill amount.
@@ -106,6 +124,8 @@
 
 [**Is your birthday lucky app**](https://mark11.neog.swapnadeep.com/)
 
+[Source Code](Mark11)
+
 - [x] Take user's complete birthday
 - [x] Take his/her lucky number.
 - [x] Find out if sum of digits of birthday is divisible by the lucky number
@@ -115,6 +135,8 @@
 ### Mark 12
 
 [**Do you know your triangles?**](https://mark12.neog.swapnadeep.com/)
+
+[Source Code](Mark12)
 
 - [x] Ask user to input three angles and you say whether user has entered angles which could make a triangle. Hint: sum of angles in triangle is 180.
 - [x] Show three angles to the user and ask if this triangle is an obtuse triangle, right triangle or acute triangle.
@@ -127,6 +149,8 @@
 
 [**Palindrome Birthday App**](https://mark13.neog.swapnadeep.com/)
 
+[Source Code](Mark13)
+
 - [x] Take your user's birthday
 - [x] Tell whether user was born on a palindrome day or not.
 - [x] You must use one of these formats to put dates eg: MM/DD/YYYY, DD/MM/YYYY, MM/DD/YY, etc. Having atleast one date-format out of these is mandatory, adding extra date formats is a bonus (optional). Make sure to check whether the date can be a palindrome date or not.
@@ -135,6 +159,8 @@
 ### Mark 14
 
 [**Profit and loss calculator**](https://mark14.neog.swapnadeep.com/)
+
+[Source Code](Mark14)
 
 - [x] Take user's stock price for one stock when he bought it.
 - [x] Take the quantity of stocks.
