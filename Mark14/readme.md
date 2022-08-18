@@ -8,3 +8,5 @@
 - [x] Tell the user how much profit or loss he/she is making.
 - [x] Tell them the percentage and absolute value of profit or loss.
 - [x] Show the profit or loss in colored fonts. (Bonus) (Optional)
+
+[**Hosted Link**](https://mark14.neog.swapnadeep.com/)

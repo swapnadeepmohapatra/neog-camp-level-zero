@@ -173,6 +173,8 @@
 
 [Blogs](https://dev.to/swapnadeepmohapatra/)
 [LinkedIn](https://www.linkedin.com/in/swapnadeep-mohapatra/)
+[Primary Portfolio](https://swapnadeep.com/)
+[Neog Portfolio](https://portfolio.neog.swapnadeep.com/)
 
 - [x] Write 2 blogs, on your own, of 200 words minimum and host it on your portfolio's blog page section. The blogs should not be copied or plagiarised. The blog could be technical or non-technical in nature.
 - [x] You should have LinkedIn Profile which is mandatory.

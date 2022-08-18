@@ -8,3 +8,5 @@
 - [x] Similar quiz on Isosceles, Equilateral.
 - [x] Ask user to enter two legs and you tell them the hypotenuse
 - [x] Calculator for area of triangle
+
+[**Hosted Link**](https://mark12.neog.swapnadeep.com/)

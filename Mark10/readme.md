@@ -7,3 +7,5 @@
 - [x] Have an input field for the user aka cashier to enter a bill amount.
 - [x] Have an input field for the user aka cashier to enter the cash given by the customer.
 - [x] The app should tell the cashier/user the amount to be returned in change to the customer with the minimum number of notes.
+
+[**Hosted Link**](https://mark10.neog.swapnadeep.com/)

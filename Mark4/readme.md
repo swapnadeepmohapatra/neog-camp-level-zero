@@ -8,3 +8,5 @@
 - [x] Host your portfolio on Netlify / vercel like platforms.
 
 Link of the hosted portfolio: [portfolio.neog.swapnadeep.com](https://portfolio.neog.swapnadeep.com/)
+
+[**Hosted Link of this repo (without blogs)**](https://portfolio-v1.neog.swapnadeep.com/)

@@ -8,3 +8,5 @@
 - [x] Display the name on emoji on click.
 - [x] Display the name of emoji on input in search box.
 - [x] Display a message for emoji not found.
+
+[**Hosted Link**](https://mark8.neog.swapnadeep.com/)

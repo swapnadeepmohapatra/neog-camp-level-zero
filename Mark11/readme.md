@@ -7,3 +7,5 @@
 - [x] Find out if sum of digits of birthday is divisible by the lucky number
 - [x] Show the result to user with some graphics.
 - [x] Create this as a website, put a privacy notice. Say that you're not storing data.
+
+[**Hosted Link**](https://mark11.neog.swapnadeep.com/)
