@@ -100,6 +100,8 @@ function CashRegisterManager(el, availableNotes) {
       alert("You have to pay something");
     } else if (inputBillAmount.value > inputCashGiven.value) {
       alert("Cash given is less than bill amount");
+    } else if (inputBillAmount.value === inputCashGiven.value) {
+      alert("No need to return change");
     } else {
       const change = calcuateChange(
         inputBillAmount.value,
