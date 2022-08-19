@@ -1,6 +1,6 @@
-# Swapnadeep's Neogcamp
+# Swapnadeep's Neogcamp Level Zero
 
-[Soruce](https://neog.camp/guide/mark-15-checklist)
+[Source](https://neog.camp/guide/mark-15-checklist)
 
 ## mark15 Checklist
 

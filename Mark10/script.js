@@ -30,7 +30,7 @@ function CashRegisterManager(el, availableNotes) {
     labelBillAmount.innerText = "Bill Amount:";
     form.appendChild(labelBillAmount);
 
-    inputBillAmount.type = "text";
+    inputBillAmount.type = "number";
     inputBillAmount.placeholder = "Enter amount";
     form.appendChild(inputBillAmount);
 
@@ -38,7 +38,7 @@ function CashRegisterManager(el, availableNotes) {
     labelCashGiven.innerText = "Cash Given:";
     form.appendChild(labelCashGiven);
 
-    inputCashGiven.type = "text";
+    inputCashGiven.type = "number";
     inputCashGiven.placeholder = "Enter amount";
     form.appendChild(inputCashGiven);
 

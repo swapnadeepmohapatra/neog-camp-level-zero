@@ -19,7 +19,7 @@ function LuckyBirthday(el) {
     form.appendChild(inputDob);
 
     createHtmlElem("label", "lucky-label", "Lucky Number:", form);
-    inputLucky.type = "text";
+    inputLucky.type = "number";
     inputLucky.placeholder = "Enter a number";
     form.appendChild(inputLucky);
 
