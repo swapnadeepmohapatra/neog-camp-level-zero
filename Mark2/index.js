@@ -20,7 +20,7 @@ var highScores = [
   },
 ];
 
-// Questions
+// Questions with options and the Correct Answers
 var questions = [
   {
     question:
@@ -52,17 +52,26 @@ var questions = [
 
 const name = getName();
 
-// Get Name
+/**
+ * Gets the user's name.
+ * @return {string} - The user's name.
+ */
 function getName() {
   return readlineSync.question(chalk.blue("What is your name? "));
 }
 
-// Display welcome message
+/**
+ * Prints the Welcome Message.
+ */
 function welcomeMessage() {
-  console.log(chalk.cyan(`Welcome to the Network Quiz! ${name}`));
+  console.log(chalk.cyan(`Welcome to the JavaScript Quiz! ${name}`));
 }
 
-// Show question
+/**
+ * Shows the question.
+ * @param {string} question - The question to be asked.
+ * @param {string} answer - The correct answer.
+ */
 function showQuestion(question, answer) {
   var userAnswer = readlineSync.question(chalk.blue(question));
 
@@ -77,14 +86,20 @@ function showQuestion(question, answer) {
   console.log("-------------");
 }
 
-// Start quiz
+/**
+ * Starts the quiz.
+ * And shows the result (score) at the end.
+ */
 function startQuiz() {
   for (var i = 0; i < questions.length; i++) {
     showQuestion(questions[i].question, questions[i].answer);
   }
 }
 
-// Display hight scores and user's score
+/**
+ * Adds the user's score to the high scores.
+ * Displays the high scores.
+ */
 function displayHighscore() {
   highScores.push({
     name: name,
