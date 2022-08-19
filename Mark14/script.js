@@ -11,15 +11,27 @@ function StockCalculator(el) {
   function createElements(inputBA, inputQty, inputLTP, output, button) {
     const fragment = document.createDocumentFragment();
 
+    const labelBuyingAverage = document.createElement("label");
+    labelBuyingAverage.innerText = "Inital Price (Buying Average):";
+    fragment.appendChild(labelBuyingAverage);
+
     inputBA.type = "number";
     inputBA.placeholder = "Enter Intial Price";
     inputBA.required = true;
     fragment.appendChild(inputBA);
 
+    const labelStockQuantity = document.createElement("label");
+    labelStockQuantity.innerText = "Quantity of Stocks:";
+    fragment.appendChild(labelStockQuantity);
+
     inputQty.type = "number";
     inputQty.placeholder = "Enter Quantity of Stocks";
     inputQty.required = true;
     fragment.appendChild(inputQty);
+
+    const labelCurrentPrice = document.createElement("label");
+    labelCurrentPrice.innerText = "Current Price (Last Traded Price):";
+    fragment.appendChild(labelCurrentPrice);
 
     inputLTP.type = "number";
     inputLTP.placeholder = "Enter Current Price";
