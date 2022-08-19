@@ -12,11 +12,11 @@ function StockCalculator(el) {
     const fragment = document.createDocumentFragment();
 
     const labelBuyingAverage = document.createElement("label");
-    labelBuyingAverage.innerText = "Inital Price (Buying Average):";
+    labelBuyingAverage.innerText = "Initial Price (Buying Average):";
     fragment.appendChild(labelBuyingAverage);
 
     inputBA.type = "number";
-    inputBA.placeholder = "Enter Intial Price";
+    inputBA.placeholder = "Enter Initial Price";
     inputBA.required = true;
     fragment.appendChild(inputBA);
 
@@ -48,24 +48,29 @@ function StockCalculator(el) {
   }
 
   function clickHandler() {
-    const ba = Number(inputBA.value);
-    const qty = Number(inputQty.value);
-    const ltp = Number(inputLTP.value);
+    if (inputBA.value && inputQty.value && inputLTP.value) {
+      const ba = Number(inputBA.value);
+      const qty = Number(inputQty.value);
+      const ltp = Number(inputLTP.value);
 
-    calculateProfitAndLoss(ba, qty, ltp);
+      calculateProfitAndLoss(ba, qty, ltp);
+    } else {
+      alert("Please enter all the fields");
+      showOutput("");
+    }
   }
 
   function calculateProfitAndLoss(buyingAverage, quantity, lastTradedPrice) {
     if (buyingAverage > lastTradedPrice) {
       var loss = (buyingAverage - lastTradedPrice) * quantity;
-      var lossPercentage = Math.round((loss / buyingAverage) * 10000) / 100;
+      var lossPercentage = ((loss / buyingAverage) * 100).toFixed(2);
 
       showOutput(
         `Hey, the loss is <span class="loss">${loss}</span> and the percent is <span class="loss">${lossPercentage}%</span>`
       );
     } else if (lastTradedPrice > buyingAverage) {
       var profit = (lastTradedPrice - buyingAverage) * quantity;
-      var profitPercentage = Math.round((profit / buyingAverage) * 10000) / 100;
+      var profitPercentage = ((profit / buyingAverage) * 100).toFixed(2);
 
       showOutput(
         `Hey, the profit is <span class="profit">${profit}</span> and the percent is <span class="profit">${profitPercentage}%</span>`
