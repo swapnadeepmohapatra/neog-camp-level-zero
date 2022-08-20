@@ -51,6 +51,10 @@ const bookDB = {
 export default function App() {
   const [selectedGenre, setGenre] = useState("coding");
 
+  /**
+   * Change handler for the genre buttons
+   * @param {string} genre The genre to be selected
+   */
   function genreClickHandler(genre) {
     setGenre(genre);
   }
@@ -59,6 +63,7 @@ export default function App() {
     <div className="App">
       <h1> 📚 goodbooks </h1>
       <p> Checkout my favorite books. Select a genre to get started </p>
+      {/* Shows all the books genre buttons */}
       <div>
         {Object.keys(bookDB).map((genre, i) => (
           <button
@@ -71,6 +76,7 @@ export default function App() {
         ))}
       </div>
       <hr />
+      {/* Shows all the books in the selected genre */}
       <div style={{ textAlign: "left" }}>
         <ul style={{ paddingInlineStart: "0" }}>
           {bookDB[selectedGenre].map((book) => (

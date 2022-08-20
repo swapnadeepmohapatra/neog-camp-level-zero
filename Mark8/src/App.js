@@ -17,6 +17,12 @@ export default function App() {
   const [selectedEmoji, setSelectedEmoji] = useState("");
   const [meaning, setMeaning] = useState("translation will appear here..");
 
+  /**
+   * Change handler for the emoji input field
+   * Sets the selected emoji to the input emoji.
+   * Sets the meaning to the emoji's meaning in the dictionary.
+   * @param {ChangeEvent} event
+   */
   function changeHandler(event) {
     const inputEmoji = event.target.value;
     setSelectedEmoji(inputEmoji);
@@ -28,6 +34,12 @@ export default function App() {
     }
   }
 
+  /**
+   * Click handler for the emoji buttons.
+   * Sets the selected emoji to the input emoji.
+   * Sets the meaning to the emoji's meaning in the dictionary.
+   * @param {String} inputEmoji
+   */
   function emojiClickHandler(inputEmoji) {
     setMeaning(emojiDictionary[inputEmoji]);
     setSelectedEmoji(inputEmoji);

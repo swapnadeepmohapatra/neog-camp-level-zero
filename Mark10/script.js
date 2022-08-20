@@ -1,3 +1,8 @@
+/**
+ * Cash Register Manager App
+ * @param {HTMLElement} el HTMlelement where the app is rendered
+ * @param {Number[]} availableNotes Array of available notes
+ */
 function CashRegisterManager(el, availableNotes) {
   const button = document.createElement("button");
   const inputBillAmount = document.createElement("input");
@@ -6,6 +11,14 @@ function CashRegisterManager(el, availableNotes) {
   createElements(el, availableNotes, button, inputBillAmount, inputCashGiven);
   addEventListeners(button);
 
+  /**
+   * Creates the elements for the app and appends them to the dom
+   * @param {HTMLElement} el HTMlelement where the app is rendered
+   * @param {HTMLElement} availableNotes Array of available notes
+   * @param {HTMLElement} button HTMlelement for the button
+   * @param {HTMLElement} inputBillAmount HTMlelement for the input bill amount
+   * @param {HTMLElement} inputCashGiven HTMlelement for the input cash given
+   */
   function createElements(
     el,
     availableNotes,
@@ -90,10 +103,18 @@ function CashRegisterManager(el, availableNotes) {
     document.querySelector(el).appendChild(fragment);
   }
 
+  /**
+   * Adds event listeners to all the elements of the app
+   * @param {HTMLElement} button HTMlelement for the button
+   */
   function addEventListeners(button) {
     button.addEventListener("click", buttonClickHandler);
   }
 
+  /**
+   * Event handler for the button click event
+   * @param {MouseEvent<HTMLButtonElement>} e Event object
+   */
   function buttonClickHandler(e) {
     e.preventDefault();
     if (inputCashGiven.value.trim() === 0 || !inputBillAmount.value.trim()) {
@@ -113,8 +134,15 @@ function CashRegisterManager(el, availableNotes) {
     }
   }
 
-  function calcuateChange(billAmount, cashGivem, availableNotes) {
-    let change = cashGivem - billAmount;
+  /**
+   * Calculates the change to be returned
+   * @param {Number} billAmount Bill amount
+   * @param {Number} cashGiven Cash given by the customer
+   * @param {Number[]} availableNotes Available notes
+   * @returns {Number[]} Array of change to be returned
+   */
+  function calcuateChange(billAmount, cashGiven, availableNotes) {
+    let change = cashGiven - billAmount;
     const changeNotes = [];
     for (let index = 0; index < availableNotes.length; index++) {
       const note = availableNotes[index];
@@ -125,6 +153,10 @@ function CashRegisterManager(el, availableNotes) {
     return changeNotes;
   }
 
+  /**
+   * Displays the change to be returned in the table
+   * @param {Number[]} change Array of change to be returned
+   */
   function displayChange(change) {
     document.querySelectorAll(".notes-no-td").forEach((tr, index) => {
       tr.innerText = change[index];
