@@ -1,3 +1,7 @@
+/**
+ * Stock Calculator App
+ * @param {HTMLElement} el HTMlelement where the app is rendered
+ */
 function StockCalculator(el) {
   const inputBA = document.createElement("input");
   const inputQty = document.createElement("input");
@@ -8,6 +12,15 @@ function StockCalculator(el) {
   el.appendChild(createElements(inputBA, inputQty, inputLTP, output, button));
   button.addEventListener("click", clickHandler);
 
+  /**
+   * Creates the elements for the app and returns them fragment
+   * @param {HTMLElement} inputBA HTMlelement for the input Buying Average
+   * @param {HTMLElement} inputQty HTMlelement for the input Stock Quantity
+   * @param {HTMLElement} inputLTP HTMlelement for the input Last Trading Price
+   * @param {HTMLElement} output HTMlelement for the output
+   * @param {HTMLElement} button HTMlelement for the button
+   * @returns {DocumentFragment}
+   */
   function createElements(inputBA, inputQty, inputLTP, output, button) {
     const fragment = document.createDocumentFragment();
 
@@ -47,6 +60,10 @@ function StockCalculator(el) {
     return fragment;
   }
 
+  /**
+   * Handles the click event of the button
+   * Calculates the profit and displays it in the output element
+   */
   function clickHandler() {
     if (inputBA.value && inputQty.value && inputLTP.value) {
       const ba = Number(inputBA.value);
@@ -60,6 +77,12 @@ function StockCalculator(el) {
     }
   }
 
+  /**
+   * Calculates the profit and loss and displays it in the output element
+   * @param {Number} buyingAverage Buying Average
+   * @param {Number} quantity Quantity of stocks
+   * @param {Number} lastTradedPrice Last Traded Price
+   */
   function calculateProfitAndLoss(buyingAverage, quantity, lastTradedPrice) {
     if (buyingAverage > lastTradedPrice) {
       var loss = (buyingAverage - lastTradedPrice) * quantity;
@@ -80,6 +103,10 @@ function StockCalculator(el) {
     }
   }
 
+  /**
+   * Displays the output in the output element
+   * @param {String} message Message to be displayed in the output element
+   */
   function showOutput(message) {
     output.innerHTML = message;
   }
