@@ -1,12 +1,22 @@
+/**
+ * Pallindrome Birthday App
+ * @param {HTMLElement} el HTMlelement where the app is rendered
+ */
 function Birthday(el) {
   const input = document.createElement("input");
   const output = document.createElement("p");
   const button = document.createElement("button");
 
   el.appendChild(createElements(input, output, button));
-
   button.addEventListener("click", clickHandler);
 
+  /**
+   * Creates the elements for the app and returns them fragment
+   * @param {HTMLElement} input HTMlelement for the input
+   * @param {HTMLElement} output HTMlelement for the output
+   * @param {HTMLElement} button HTMlelement for the button
+   * @returns {DocumentFragment}
+   */
   function createElements(input, output, button) {
     const fragment = document.createDocumentFragment();
 
@@ -24,9 +34,10 @@ function Birthday(el) {
     return fragment;
   }
 
+  /**
+   * Click handler for the button
+   */
   function clickHandler() {
-    console.log("Clicked");
-
     var bdayString = input.value;
 
     if (bdayString !== "") {
@@ -56,34 +67,42 @@ function Birthday(el) {
         const [ctr1, nextDate] = getNextPalindromeDate(date);
         const [ctr2, prevDate] = getPreviousPalindromeDate(date);
 
-        output.innerText =
+        showOutput(
           ctr1 > ctr2
             ? `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days.`
-            : `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`;
+            : `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`
+        );
       } else {
-        output.innerText = "Yay! Your birthday is palindrome!";
+        showOutput("Yay! Your birthday is palindrome!");
       }
+    } else {
+      showOutput("Please enter your birthday");
     }
   }
 
-  function getDateAsString(date) {
-    const { day, month, year } = date;
-
-    return {
-      day: day < 10 ? `0${day}` : day,
-      month: month < 10 ? `0${month}` : month,
-      year,
-    };
-  }
-
+  /**
+   * Returns the date as string in all the date formats
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {String[]}
+   */
   function reverseString(str) {
     return str.split("").reverse().join("");
   }
 
+  /**
+   * Checks if the date is palindrome.
+   * @param {{day: String, month: String, year: String}} str Date
+   * @returns {Boolean}
+   */
   function isStringPalindrome(str) {
     return str === reverseString(str);
   }
 
+  /**
+   * Returns the date as string by padding the month and day with 0 if they are single digit
+   * @param {{day: Number, month: Number, year: Number}} date
+   * @returns {{day: String, month: String, year: String}}
+   */
   function getDateAsString(date) {
     const { day, month, year } = date;
 
@@ -94,6 +113,11 @@ function Birthday(el) {
     };
   }
 
+  /**
+   * Returns the date as string in all the date formats - ddmmyyyy mmddyyyy yyyymmdd ddmmyy mmddyy yyddmm
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {{day: String, month: String, year: String}[]}
+   */
   function getDateInAllFormats(date) {
     var ddmmyyyy = date.day + date.month + date.year;
     var mmddyyyy = date.month + date.day + date.year;
@@ -105,10 +129,20 @@ function Birthday(el) {
     return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yyddmm];
   }
 
+  /**
+   * Checks if the date is palindrome in all the date formats
+   * @param {{day: String, month: String, year: String}[]} date
+   * @returns {Boolean[]}
+   */
   function checkPalindromeForAllDateFormats(date) {
     return getDateInAllFormats(date).map(isStringPalindrome);
   }
 
+  /**
+   * Checks if the year is leap year
+   * @param {Number} year
+   * @returns {Boolean}
+   */
   function isLeapYear(year) {
     if (year % 400 === 0) return true;
 
@@ -119,6 +153,11 @@ function Birthday(el) {
     return false;
   }
 
+  /**
+   * Gets the next date
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {{day: String, month: String, year: String}}
+   */
   function getNextDate(date) {
     var day = date.day + 1;
     var month = date.month;
@@ -157,6 +196,11 @@ function Birthday(el) {
     };
   }
 
+  /**
+   * Finds the next palindrome date for the given date
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {{day: String, month: String, year: String}}
+   */
   function getNextPalindromeDate(date) {
     var nextDate = getNextDate(date);
     var ctr = 0;
@@ -175,6 +219,11 @@ function Birthday(el) {
     }
   }
 
+  /**
+   * Gets the previous date
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {{day: String, month: String, year: String}}
+   */
   function getPreviousDate(date) {
     var day = date.day - 1;
     var month = date.month;
@@ -207,6 +256,11 @@ function Birthday(el) {
     };
   }
 
+  /**
+   * Finds the previous palindrome date for the given date
+   * @param {{day: String, month: String, year: String}} date
+   * @returns {{day: String, month: String, year: String}}
+   */
   function getPreviousPalindromeDate(date) {
     var previousDate = getPreviousDate(date);
     var ctr = 0;
@@ -223,6 +277,14 @@ function Birthday(el) {
       }
       previousDate = getPreviousDate(previousDate);
     }
+  }
+
+  /**
+   * Displays the output in the output element
+   * @param {String} message Message to be displayed in the output element
+   */
+  function showOutput(message) {
+    output.innerHTML = message;
   }
 }
 
