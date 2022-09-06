@@ -4,6 +4,9 @@ const thirdSide = document.querySelector("#third-side");
 const calculate = document.querySelector(".btn-check");
 const output = document.querySelector("#output");
 
+/**
+ * Calculates the area of the triangle using Heron's formula and displays the message.
+ */
 function calculateArea() {
   const firstSideValue = Number(firstSide.value);
   const secondSideValue = Number(secondSide.value);
@@ -27,6 +30,13 @@ function calculateArea() {
   }
 }
 
+/**
+ * Checks if the triangle is valid or not
+ * @param {Number} firstSideValue Length of first side
+ * @param {Number} secondSideValue Length of second side
+ * @param {Number} thirdSideValue Length of third side
+ * @returns {Boolean} Returns true if the triangle is valid
+ */
 function isValidTriangle(firstSideValue, secondSideValue, thirdSideValue) {
   return (
     firstSideValue + secondSideValue > thirdSideValue &&
@@ -35,4 +45,7 @@ function isValidTriangle(firstSideValue, secondSideValue, thirdSideValue) {
   );
 }
 
+/**
+ * Adds event listener to the button
+ */
 calculate.addEventListener("click", calculateArea);

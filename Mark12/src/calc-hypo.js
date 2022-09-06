@@ -2,11 +2,20 @@ const sides = document.querySelectorAll(".side-input");
 const calculateBtn = document.querySelector("#calculate-hypotenuse-btn");
 const outputEl = document.querySelector(".output");
 
+/**
+ * Calculates the sum of squares of two sides
+ * @param {Number} a Length of side a
+ * @param {Number} b  Length of side b
+ * @returns {Number} Sum of squares of the two sides
+ */
 function calculateSumOfSquare(a, b) {
   const sumOfSquares = a * a + b * b;
   return sumOfSquares;
 }
 
+/**
+ * Calculates the hypotenuse of the triangle using pythagoras theorem
+ */
 function calculateHypotenuse() {
   if (!sides[0].value || !sides[1].value) {
     alert("Please enter all the two sides");
@@ -21,4 +30,7 @@ function calculateHypotenuse() {
   }
 }
 
+/**
+ * Adds event listener to the button
+ */
 calculateBtn.addEventListener("click", calculateHypotenuse);

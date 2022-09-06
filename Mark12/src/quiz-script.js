@@ -1,3 +1,6 @@
+/**
+ * Contains the questions and answers for the quiz
+ */
 const quizzes_list = [
   {
     id: "1",
@@ -66,6 +69,11 @@ const quizzes_list = [
   },
 ];
 
+/**
+ * Triangles Quiz App
+ * @param {HTMLElement} el HTMlelement where the app is rendered
+ * @param {{ id: string; question:string; answers: string[]; correct_answer: string; }[]} questionsList List of questions and their answers
+ */
 function QuizApp(el, questionsList) {
   const button = document.createElement("button");
   const output = document.createElement("p");
@@ -73,6 +81,13 @@ function QuizApp(el, questionsList) {
   createHtmlElement(el, button, output, questionsList);
   addEventListener(button, output, questionsList);
 
+  /**
+   *
+   * @param {HTMLElement} el HTMlelement where the app is rendered
+   * @param {HTMLElement} button Button element
+   * @param {HTMLElement} output Output element
+   * @param {{ id: string; question:string; answers: string[]; correct_answer: string; }[]} questionsList List of questions
+   */
   function createHtmlElement(el, button, output, questionsList) {
     createQuestions(el, questionsList);
 
@@ -83,6 +98,11 @@ function QuizApp(el, questionsList) {
     button.innerHTML = "Check your answers";
     el.appendChild(button);
 
+    /**
+     * Creates the elements for the app and appends them to the dom
+     * @param {HTMLElement} el HTMlelement where the app is rendered
+     * @param {HTMLElement} questionsList List of questions
+     */
     function createQuestions(el, questionsList) {
       const qDiv = document.createElement("div");
       qDiv.classList.add("quiz-container");
@@ -110,9 +130,17 @@ function QuizApp(el, questionsList) {
     }
   }
 
+  /**
+   * Adds event listener to the button
+   * @param {HTMLElement} button Button element
+   * @param {HTMLElement} output Output element
+   * @param {{ id: string; question:string; answers: string[]; correct_answer: string; }[]} questionsList List of questions
+   */
   function addEventListener(button, output, questionsList) {
     button.addEventListener("click", () => {
       let correctAnswers = 0;
+
+      // Loops through the questions and checks if the answer is correct
       questionsList.forEach((question) => {
         const answer = document.querySelector(
           `input[name="question${question.id}"]:checked`
