@@ -117,16 +117,22 @@ function CashRegisterManager(el, availableNotes) {
    */
   function buttonClickHandler(e) {
     e.preventDefault();
-    if (inputCashGiven.value.trim() === 0 || !inputBillAmount.value.trim()) {
+    if (
+      Number(inputCashGiven.value) === 0 ||
+      Number(inputBillAmount.value) === 0 ||
+      !inputBillAmount.value.trim() ||
+      !inputCashGiven.value.trim()
+    ) {
       alert("You have to pay something");
-    } else if (inputBillAmount.value > inputCashGiven.value) {
+    } else if (Number(inputBillAmount.value) > Number(inputCashGiven.value)) {
+      console.log(Number(inputBillAmount.value), Number(inputCashGiven.value));
       alert("Cash given is less than bill amount");
-    } else if (inputBillAmount.value === inputCashGiven.value) {
+    } else if (Number(inputBillAmount.value) === Number(inputCashGiven.value)) {
       alert("No need to return change");
     } else {
       const change = calcuateChange(
-        inputBillAmount.value,
-        inputCashGiven.value,
+        Number(inputBillAmount.value),
+        Number(inputCashGiven.value),
         availableNotes
       );
 
