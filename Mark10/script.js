@@ -118,8 +118,8 @@ function CashRegisterManager(el, availableNotes) {
   function buttonClickHandler(e) {
     e.preventDefault();
     if (
-      Number(inputCashGiven.value) === 0 ||
-      Number(inputBillAmount.value) === 0 ||
+      Number(inputCashGiven.value) < 1 ||
+      Number(inputBillAmount.value) < 1 ||
       !inputBillAmount.value.trim() ||
       !inputCashGiven.value.trim()
     ) {
