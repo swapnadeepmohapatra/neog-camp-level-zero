@@ -11,6 +11,9 @@ const emojiDictionary = {
   "🍇": "Grapes",
   "🍈": "Melon",
   "🍉": "Watermelon",
+  "✨": "Sparkles",
+  "💀": "Skull",
+  "👍": "Thumbs Up",
 };
 
 export default function App() {
