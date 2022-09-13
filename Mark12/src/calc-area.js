@@ -12,6 +12,10 @@ function calculateArea() {
   const secondSideValue = Number(secondSide.value);
   const thirdSideValue = Number(thirdSide.value);
 
+  if (firstSideValue < 1 || secondSideValue < 1 || thirdSideValue < 1) {
+    return (output.innerText = "Please enter valid sides");
+  }
+
   if (isValidTriangle(firstSideValue, secondSideValue, thirdSideValue)) {
     // √s(s - a)(s - b)(s - c) Class 6 Nostalgia 😂
 

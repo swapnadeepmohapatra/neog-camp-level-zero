@@ -65,6 +65,14 @@ function StockCalculator(el) {
    * Calculates the profit and displays it in the output element
    */
   function clickHandler() {
+    if (
+      Number(inputBA.value) < 1 ||
+      Number(inputQty.value) < 1 ||
+      Number(inputLTP.value) < 1
+    ) {
+      return alert("Please enter valid input in the fields");
+    }
+
     if (inputBA.value && inputQty.value && inputLTP.value) {
       const ba = Number(inputBA.value);
       const qty = Number(inputQty.value);
