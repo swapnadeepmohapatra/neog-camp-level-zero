@@ -21,6 +21,11 @@ function calculateHypotenuse() {
     alert("Please enter all the two sides");
     outputEl.innerText = "";
   } else {
+    if (Number(sides[0].value) < 1 || Number(sides[1].value) < 1) {
+      alert("Please enter valid length two sides");
+      outputEl.innerText = "";
+    }
+
     const sumOfSquares = calculateSumOfSquare(
       Number(sides[0].value),
       Number(sides[1].value)

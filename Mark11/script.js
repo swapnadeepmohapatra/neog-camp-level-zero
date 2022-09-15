@@ -68,6 +68,11 @@ function LuckyBirthday(el) {
       const date = inputDob.value;
       const numberToCheck = inputLucky.value;
       if (date && numberToCheck) {
+        if (Number(numberToCheck) < 0) {
+          showMessage("Please enter a positive number");
+          return;
+        }
+
         const sumOfDate = calculateSum(date);
         checkIsNumberLucky(sumOfDate, numberToCheck);
       } else {
